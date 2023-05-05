@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200;300;400;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+        <p>Student Portal</p>
+    </nav>
+    <div class="input-container">
+        <input type="text" id="search-input" placeholder="Search" >
+        <button id="search-btn" onclick="searchFun()">Search</button>
+    </div>
+    <div class="button-container">
+        <button class="sortasc" id="sortasc" onclick="sortAtoZ()">Sort A->Z</button>
+        <button class="sortdesc" id="sortdesc" onclick="sortZtoA()">Sort Z->A</button>
+        <button class="sortbymarks" id="sortbymarks" onclick="sortByMarks()">Sort By Marks</button>
+        <button class="sortbypassing" id="sortbypassing" onclick="sortByPassing()">Sort By Passing</button>
+        <button class="sortbyclass" id="sortbyclass" onclick="sortByClass()">Sort By Class</button>
+        <button class="sortbygender" id="sortbygender" onclick="sortByGender()">Sort By Gender</button>
+    </div>
+
+    <div class="container">
+        <table id="myTable">
+            <colgroup>
+              <col style="width: 5%">
+              <col style="width: max-content">
+              <col style="width: 10%">
+              <col style="width: 10%">
+              <col style="width: 10%">
+              <col style="width: 10%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Marks</th>
+                <th>Passing</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody id="my-table-body">
+              
+            </tbody>
+          </table>
+          <table id="myTable1">
+            <colgroup>
+              <col style="width: 10%">
+              <col style="width: 40%">
+              <col style="width: 10%">
+              <col style="width: 10%">
+              <col style="width: 10%">
+              <col style="width: 10%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Marks</th>
+                <th>Passing</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody id="my-table-body1">
+              
+            </tbody>
+          </table>
+          
+    </div>
+
+    <script src="student.js"></script>
+</html>
