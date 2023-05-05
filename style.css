@@ -1,0 +1,83 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: rgb(205,205,205);
+    font-family: 'Inter', sans-serif;
+}
+nav{
+    padding:10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 5px;
+}
+.input-container > input{
+    flex-grow: 1;
+    text-align: left;
+    padding: 5px;
+}
+ button{
+    width: 20%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.button-container{
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+/* .table-container{
+    background-color: rgb(217,217,217);
+    border: 1px solid black;
+    padding: 10px;
+} */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    
+  }
+  .wide-col {
+    width: 40%;
+  }
+  .narrow-col {
+    width: 5%;
+  }
+  #myTable1{
+    margin-top: 5%;
+    display: none;
+    width: 100%;
+  }
+  img{
+    width: 38px;
+    height: 38px;
+    display: inline;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+.cell{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    /* border-top: none; */
+}
